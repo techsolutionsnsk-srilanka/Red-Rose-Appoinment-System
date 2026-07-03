@@ -1,0 +1,23 @@
+# dependencies
+**/node_modules/
+
+# next.js
+**/.next/
+**/out/
+**/next-env.d.ts
+**/*.tsbuildinfo
+
+# go
+backend/bin/
+backend/tmp/
+*.exe
+
+# env
+.env
+**/.env
+**/.env*.local
+!**/.env.example
+
+# logs / os
+*.log
+.DS_Store

@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #f7f7f8;
+  --foreground: #1f2937;
+  --card: #ffffff;
+  --card-foreground: #1f2937;
+  --primary: #e11d48;
+  --primary-foreground: #ffffff;
+  --muted: #f1f1f3;
+  --muted-foreground: #6b7280;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #e11d48;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: #0b0b0d;
+  --foreground: #f3f4f6;
+  --card: #17171a;
+  --card-foreground: #f3f4f6;
+  --primary: #fb7185;
+  --primary-foreground: #1a1a1a;
+  --muted: #1f1f23;
+  --muted-foreground: #9ca3af;
+  --border: #27272a;
+  --input: #27272a;
+  --ring: #fb7185;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
